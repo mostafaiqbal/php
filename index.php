@@ -70,11 +70,7 @@
 
     echo "<br><br>";
 
-// If Statement 
-echo 'mostafa iqbal'
-
-
-
+// If Statement
 
 ?> 
 

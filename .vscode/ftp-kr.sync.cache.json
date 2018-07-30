@@ -1,0 +1,33 @@
+{
+  "ftp://160.153.16.39@iqbalshopnook@indigoqbal.co.uk": {
+    "iqbal": {
+      "php": {
+        ".DS_Store": {
+          "type": "-",
+          "size": 6148,
+          "lmtime": 0,
+          "modified": false
+        },
+        "email.php": {
+          "type": "-",
+          "size": 50,
+          "lmtime": 1532885475496,
+          "modified": false
+        },
+        "error_log": {
+          "type": "-",
+          "size": 3931,
+          "lmtime": 0,
+          "modified": true
+        },
+        "index.php": {
+          "type": "-",
+          "size": 1765,
+          "lmtime": 0,
+          "modified": false
+        }
+      }
+    }
+  },
+  "$version": 1
+}
