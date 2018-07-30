@@ -71,7 +71,45 @@
     echo "<br><br>";
 
 // If Statement 
-echo 'mostafa iqbal'
+
+ $age = 18;
+
+ if ($age>=18) {
+    echo " Let Him Enter";
+ } else {
+     echo "Sorry, Under age";
+ };
+
+ 
+ echo "<br>";
+    // More If Statement 
+ $age =25;
+ $nation = "British";
+    if($age >= 18 || $nation == "British") {
+        echo "Enter";
+    } else {
+        echo "Need to Check Documents";
+    };
+
+    echo "<br><br>";
+
+// For Loop
+
+for ($i = 10; $i >= 0; $i--) {
+    echo $i.'<br>';
+}
+
+echo "<br><br>";
+//More For Loop
+$email = array("HOSSAIN", "SHAHIDA", "IQBAL", "IMRAN");
+for ($i = 0; $i <sizeof($email); $i++) {
+    echo $email[$i].'<br>';
+}
+
+//FOREACH LOOP 
+
+foreach ()
+
 
 
 
