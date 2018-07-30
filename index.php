@@ -108,7 +108,7 @@ for ($i = 0; $i <sizeof($email); $i++) {
 
 //FOREACH LOOP 
 
-foreach ()
+
 
 
 
