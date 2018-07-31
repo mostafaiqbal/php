@@ -1,12 +1,9 @@
 <?php
 //GET
-echo "<h1> PHP GET Scripts </h1>";
-
-
-
-
-
-
-
 
 ?>
+<h1> Prime Number Checker </h1> 
+<form>
+    <input name="number" type = "text"> 
+    <input type="submit" value="Submit">
+</form>
