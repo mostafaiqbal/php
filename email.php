@@ -1,6 +1,6 @@
 <?
 
-$emailTo = "i.rashel@outlook.com";
+$emailTo = "test@shopnookbd.com";
 $subject = "Hello from Other Side" ;
 $body = "Hi this is me testing php email";
 $headers = "From: iqbal@marblecars.co.uk" ;
