@@ -2,9 +2,6 @@
 
 
 
-
-
-
 ?>
 
 <!doctype html>
@@ -23,6 +20,8 @@
     <div class = "container" > 
         
         <h1>Contact Us </h1>
+
+        <div id="error" role="alert" > </div>
 
         <form method="post">
         <fieldset class="form-group">
@@ -49,7 +48,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script type="text/javascript"> 
+        $("form").submit(function(e){
+        e.preventDefault();
 
+        var error = "";
+
+        if ($("#email").val() == "") {
+            error += "<p> Email address is required. <p>"
+        }        
+          
+        if ($("#subject").val() == "") {
+            error += "<p> Subject field is required. <p>"
+        }
+
+        if ($("#content").val() == "") {
+            error += "<p> Content field is required. <p>"
+        }
+        
+       if($("error") != "") {
+
+     $("#error").html('<div class="alert alert-danger" role="alert"> <strong>There are error(s) </strong> + + </div>');
+    
+     }
+
+    });
 
     </script> 
 
