@@ -1,62 +1,62 @@
-<?
+<?php
+  $error = "";
+  $successMessage = "";
 
-    // Created by Mostafa Iqbal (github.com/mostafaiqbal)
-    //Present to You by MiQ iNNOV@TiON (github.com/miqinnovation)
-    //This codes are free to use
-    
-    $error = "";
-    $successMessage = "";
-    
-    if($_POST) {
+if ($_POST) {
 
-        if (!$_POST["email"]) {
+  
 
-            $error.= "Email address is required <br/>";
+    if(!$_POST["email"]) {
 
-        }
-        if (!$_POST["subject"]) {
+        $error .= "Email addess is missing <br/>";
+    }
 
-            $error.= "Subject filed is required <br/>";
+    if(!$_POST["subject"]) {
 
-        }
-        if (!$_POST["content"]) {
+        $error .= "Subject field is missing <br/>";
+    }
 
-            $error.= "Content filed is required";
+    if(!$_POST["content"]) {
 
-        }
+        $error .= "Content field    is missing <br/>";
+    }
 
-        if ($_POST["email"] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false ) {
-            $error.= "The email address is invalid <br/>"; 
-          }
+    if ($_POST["email"] !== "") {
 
-        if($error != "") {
+        if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false) {
+            $error .= "Email Address is not valid";
+          } 
+    }
+   
 
-            $error = '<div class="alert alert-danger" role="alert"><strong> There were error(s) in your form:</strong> <br/>' . $error. '</div>';
-
-        } else {
-            $emailTo = "test@shopnookbd.com";
-            $subject = $_POST["subject"];
-            $content = $_POST["content"];
-            $headers = "From:" .$_POST["email"];
-
-            if(mail($emailTo, $subject, $content, $headers)) {
-
-                $successMessage = '<div class="alert alert-success role="alert"><strong> Your Message has been Sent Successfully </div>';
-            } else {
-                $error = '<div class="alert alert-danger" role="alert"><strong> Message Failed. Please try again </div>';
-            }
-        }
+      if ($error != "" ) {
+        $error .=  '<div class="alert alert-danger" role="alert"><strong> There are some error(s)</strong><br/>'. $error . '</div>';
+    } else {
+        $emailTo = "test@shopnookbd.com";
+        $subject = $_POST["subject"];
+        $content = $_POST["content"];
+        $headers = "From:" .$_POST["email"];
 
     }
 
+    if (mail($emailTo, $subject, $content, $headers)) {
 
-?>
+        $successMessage = '<div class="alert alert-success" role="alert"><strong> Email Has been sent successfully. We will comeback to you soon </strong></div>';
+    }  else {
 
+        $error .=  '<div class="alert alert-danger" role="alert"><strong> There are some error(s)</strong><br/>'. $error . '</div>';
+    }
+}
+
+?>    
+    
+    
+    
     <!doctype html>
     <html lang="en">
 
     <head>
-        <!-- Required meta tags CONNECTION TESTING-->
+        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -71,11 +71,11 @@
         <div class="container">
 
             <h1>Contact Us </h1>
-
-            <div id="error">
-                <? echo $error. $successMessage; ?>
-
-            </div>
+            <div id="error"> 
+                <? echo $error ;
+                   echo $successMessage;        
+                ?>
+                </div>
 
             <form method="post">
                 <fieldset class="form-group">
@@ -105,52 +105,34 @@
         </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous">
-        </script>
+        </script>    
 
         <script type="text/javascript">
-            $("form").submit(function(e) {
 
-                let error = "";
+            $("form").submit( function (e){
+            
+                let error = "" ;
 
-                //$("#error").html(error)
-
-                if ($("#email").val() == "") {
-
-                    error += "Email address is required <br/>"
-
+                if ( $("#email").val() == "") {
+                    error += "EMAIL is Required <br/>" 
+                }
+                
+                if ( $("#subject").val() == "") {
+                    error += "SUBJECT is Required <br/>" 
                 }
 
-                // $("#error").html(error)
-
-                if ($("#subject").val() == "") {
-
-                    error += "The subject filed is required <br/>"
-
+                if ( $("#content").val() == "") {
+                    error += "CONTENT is Required <br/>" 
                 }
+                if (error !== "") {
 
-                // $("#error").html(error)
-
-                if ($("#content").val() == "") {
-
-                    error += "<p> Content is required"
-
-                }
-
-                if (error != "") {
-
-                    $("#error").html(
-                        '<div class="alert alert-danger" role="alert"><strong> There were error(s) in your form:</strong> <br/>' +
-                        error + '</div>');
+                $("#error").html('<div class="alert alert-danger" role="alert"><strong> There are some error(s)</strong><br/>' + error + '</div>');
                     return false;
                 } else {
                     return true;
                 }
+            })
 
-            });
-        </script>
-
-
-
-    </body>
-
-    </html>
+    </script>
+</body>
+</html>
