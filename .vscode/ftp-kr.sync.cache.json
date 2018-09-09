@@ -22,55 +22,50 @@
         },
         "contact.php": {
           "type": "-",
-<<<<<<< HEAD
-          "size": 2505,
-          "lmtime": 1533927306000,
-=======
-          "size": 5164,
-          "lmtime": 1534599650725,
-          "modified": true
+          "size": 2807,
+          "lmtime": 1536173263000,
+          "modified": false
         },
         "contactus.php": {
           "type": "-",
           "size": 4795,
-          "lmtime": 1536162312781,
+          "lmtime": 0,
           "modified": false
         },
         "contacus.php": {
           "type": "-",
           "size": 2646,
           "lmtime": 0,
->>>>>>> 9e4c0a76d4087f7bf97ebe060688e2351dbc4004
           "modified": false
         },
         "email.php": {
           "type": "-",
           "size": 319,
-          "lmtime": 1533398100150,
+          "lmtime": 0,
           "modified": false
         },
         "error_log": {
           "type": "-",
           "size": 30744,
           "lmtime": 0,
-          "modified": true
+          "modified": false
         },
         "getpost.php": {
           "type": "-",
           "size": 525,
-          "lmtime": 1533316963249,
+          "lmtime": 0,
           "modified": false
         },
         "index.php": {
           "type": "-",
           "size": 2668,
-          "lmtime": 1534278347643,
+          "lmtime": 0,
           "modified": false
         },
         "primenumber.php": {
           "type": "-",
           "size": 1193,
-          "lmtime": 1533040802837,
+          "lmtime": 0,
           "modified": false
         }
       }
