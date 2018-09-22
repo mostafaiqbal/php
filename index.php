@@ -1,12 +1,13 @@
 <?php
+    
    echo "<h1> PHP Scripts </h1>";
-   echo "<b>Hello World</b>";
-   
+   echo "<b>Hello World</b> </br>";
+   echo "<b> Hello World </b>"; 
 
     // Variables 
 
    $name = "<p>Iqbal</p>";
-   echo $name;
+   echo $name;  
 
    //concatinating two variables. 
    $string1 = "This is a PHP course";
