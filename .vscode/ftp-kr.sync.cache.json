@@ -11,31 +11,36 @@
         "contact.php": {
           "type": "-",
           "size": 2807,
+<<<<<<< HEAD
           "lmtime": 1534599650725,
           "modified": true
+=======
+          "lmtime": 1536173263000,
+          "modified": false
+>>>>>>> 5b8962d227daeb3a53321b0afdaa634351ed7801
         },
         "contactus.php": {
           "type": "-",
           "size": 4795,
-          "lmtime": 1536162312781,
+          "lmtime": 0,
           "modified": false
         },
         "email.php": {
           "type": "-",
           "size": 319,
-          "lmtime": 1533398100150,
+          "lmtime": 0,
           "modified": false
         },
         "error_log": {
           "type": "-",
           "size": 32902,
           "lmtime": 0,
-          "modified": true
+          "modified": false
         },
         "getpost.php": {
           "type": "-",
           "size": 525,
-          "lmtime": 1533316963249,
+          "lmtime": 0,
           "modified": false
         },
         "helloWorld.php": {
@@ -52,6 +57,7 @@
         },
         "index.php": {
           "type": "-",
+<<<<<<< HEAD
           "size": 2711,
           "lmtime": 1537448097301,
           "modified": false
@@ -60,12 +66,16 @@
           "type": "-",
           "size": 600,
           "lmtime": 1537451157392,
+=======
+          "size": 2668,
+          "lmtime": 0,
+>>>>>>> 5b8962d227daeb3a53321b0afdaa634351ed7801
           "modified": false
         },
         "primenumber.php": {
           "type": "-",
           "size": 1193,
-          "lmtime": 1533040802837,
+          "lmtime": 0,
           "modified": false
         },
         "testform.php": {
